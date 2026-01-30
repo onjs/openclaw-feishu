@@ -1,0 +1,60 @@
+{
+  "name": "@noah-claw/feishu",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OpenClaw Feishu/Lark channel plugin",
+  "license": "MIT",
+  "files": [
+    "index.ts",
+    "src",
+    "openclaw.plugin.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noah/openclaw-feishu.git"
+  },
+  "keywords": [
+    "openclaw",
+    "feishu",
+    "lark",
+    "飞书",
+    "chatbot",
+    "ai",
+    "claude"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "channel": {
+      "id": "feishu",
+      "label": "Feishu",
+      "selectionLabel": "Feishu/Lark (飞书)",
+      "docsPath": "/channels/feishu",
+      "docsLabel": "feishu",
+      "blurb": "飞书/Lark enterprise messaging.",
+      "aliases": [
+        "lark"
+      ],
+      "order": 70
+    },
+    "install": {
+      "npmSpec": "@noah-claw/feishu",
+      "localPath": ".",
+      "defaultChoice": "npm"
+    }
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.30.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "openclaw": "2026.1.29",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.1.24"
+  }
+}
