@@ -46,7 +46,8 @@
   },
   "dependencies": {
     "@larksuiteoapi/node-sdk": "^1.30.0",
-    "zod": "^4.3.6"
+    "zod": "^4.3.6",
+    "openclaw": "^2026.1.24"
   },
   "devDependencies": {
     "@types/node": "^25.0.10",
